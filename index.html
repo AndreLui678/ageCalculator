@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+
+<head>
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+  rel="stylesheet">
+
+ <link rel="stylesheet" href="style.css">
+
+ <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Age calculator app</title>
+</head>
+
+<body>
+
+ <div class="container">
+  <div class="card">
+
+   <div class="dataContainer">
+
+    <div class="data">
+     <label for="day" class="dataLabel">D I A</label>
+     <input type="number" placeholder="DD" class="dataInput" id="day">
+     <p class="errorText"></p>
+    </div>
+
+    <div class="data">
+     <label for="month" class="dataLabel">M E S</label>
+     <input type="number" placeholder="MM" class="dataInput" id="month">
+     <p class="errorText"></p>
+    </div>
+
+    <div class="data">
+     <label for="year" class="dataLabel">A N O</label>
+     <input type="number" placeholder="YYYY" class="dataInput" id="year">
+     <p class="errorText"></p>
+    </div>
+
+    <div class="btnContainer">
+     <button id="arrow">
+      <img id="arrowIcon" src="./images/icon-arrow.svg" alt="arrow">
+     </button>
+    </div>
+   </div>
+
+   <div class="functionContainer">
+    <h1 class="dateName">
+     <span class="functions" id="functionYear"></span>
+     anos
+    </h1>
+
+    <h1 class="dateName">
+     <span class="functions" id="functionMonth"></span>
+     meses
+    </h1>
+
+    <h1 class="dateName">
+     <span class="functions" id="functionDay"></span>
+     dias
+    </h1>
+   </div>
+
+  </div>
+ </div>
+
+ <script src="script.js"></script>
+
+</body>
+
+</html>
